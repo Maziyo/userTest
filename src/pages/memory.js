@@ -9,7 +9,7 @@ const Memory = () => {
     const handlerSend = async () =>{
         if(!text.trim()) return;
 
-        const response = await fetch("/api/saveData", {
+        const response = await fetch("https://your-project-name.vercel.app/api/saveData", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({ text })
